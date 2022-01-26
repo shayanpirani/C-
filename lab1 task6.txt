@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+
+class animal{
+};
+
+int main()
+{
+	animal *obj;
+	obj=new animal[20];
+	cout<<"memory allocated"<<endl;
+
+}

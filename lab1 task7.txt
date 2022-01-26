@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+class numbers{
+	private:
+		int ptr;
+		int *p;
+		
+	public:
+	int assign()
+	{
+		ptr=10;
+		cout<<ptr<<endl;
+		}	
+	~numbers()
+	{
+		delete p;
+		cout<<"memory released"<<endl;
+		}	
+};
+int main()
+{
+	numbers obj;
+	obj.assign();
+	obj.~numbers();
+}
